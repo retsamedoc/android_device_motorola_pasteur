@@ -1,0 +1,99 @@
+# system.prop for Pasteur
+#
+
+# wlan interface
+wifi.interface = wlan0
+softap.interface = wlan1
+
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+wifi.supplicant_scan_interval = 45
+
+# The OpenGL ES API level that is natively supported by this device.
+# This is a 16.16 fixed point number
+ro.opengles.version = 131072
+
+# System property for SMC
+ro.service.start.smc=1
+
+# Set this property manually to enable ADB when using a factory cable
+persist.factory.allow_adb =
+
+# Enable HDMI hdcp support
+ro.hdcp.support = 2
+
+# Enable wifi location when on LTE
+persist.mot.wifi_loc_on_lte=1
+
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
+drm.service.enabled=true
+persist.sys.usb.config=mtp
+persist.log.autospd.disable=0
+persist.log.autospd.delayms=5000
+ro.com.android.dateformat=MM-dd-yyyy
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.notification_sound=pixiedust.ogg
+ro.config.alarm_alert=Alarm_Classic.ogg
+ro.com.google.gmsversion=4.0_r2
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=256m
+ro.mot.setuptype=2
+telephony.lteOnCdmaDevice=1
+persist.radio.lte.ignoreims=1
+rild.libpath=/system/lib/libmoto_ril.so
+persist.ril.mux.ttydevice=/dev/usb/tty1-2:1.2
+persist.ril.mux.noofchannels=8
+persist.ril.modem.mode=1
+persist.ril.data.req.timeout=120
+persist.ril.features=0x3A800
+persist.ril.mux.retries=45
+persist.ril.mux.sleep=2
+persist.ril.qmiport.retries=60
+persist.ril.max.crit.qmi.fails=4
+persist.ril.allowHrpd=1
+persist.ril.rssi.enable.param6=1
+persist.ril.event.report=16
+ro.cdma.home.operator.numeric=310004
+ro.cdma.home.operator.alpha=Verizon
+ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83
+ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000
+persist.ril.modem.ttydevice=/dev/usb/tty1-2:1.4
+ro.telephony.default_network=7
+ro.mot.lte_on_cdma=true
+ro.mot.phonemode.vzw4gphone=1
+ro.mot.tmp.telephony.refactor=true
+persist.ril.diag.ttydevice=/dev/usb/tty1-2:1.0
+ro.cdma.subscription=0
+ro.mot.tether_dun_required=1
+ro.mot.eri=1
+ro.com.google.clientidbase=android-motorola
+ro.com.google.clientidbase.ms=android-verizon
+ro.com.google.clientidbase.am=android-verizon
+ro.com.google.clientidbase.gmm=android-motorola
+ro.com.google.clientidbase.yt=android-verizon
+ro.mot.hw.uaprof=http://uaprof.vtext.com/mot/mz617/mz617.xml
+ro.gsm.data_retry_config=max_retries=infinite,default_randomization=2000,0,0,80000,125000,485000,905000
+ro.gsm.2nd_data_retry_config=max_retries=infinite,default_randomization=2000,0,0,80000,125000,485000,905000
+keyguard.no_require_sim=true
+telephony.sms.receive=true
+telephony.text.sms.receive=true
+telephony.mms.noti.receive=true
+ro.bug2go.uid.type=TELEPHONY_DEVICE_ID
+dalvik.vm.dexopt-flags=m=y
+net.bt.name=Android
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+ro.mot.dpmext=true
+ro.com.google.clientid=android-motorola
+ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
+ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+ro.build.version.full=Blur_Version.11.11.26.MZ617.Verizon.en.US
+ro.mot.hidden_keyboards=evfwd
+ro.mot.build.version.sdk_int=7
+ro.mot.product.modelno=MZ617
+
+
